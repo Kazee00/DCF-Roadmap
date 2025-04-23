@@ -1,0 +1,43 @@
+import turtle
+star = turtle.Turtle()
+screen = turtle.Screen()
+screen.bgcolor("black")
+
+def draw_stars(lenght, color,x,y):
+    star.speed(20)
+    star.color("#fcba03")
+    star.penup()
+    star.goto(x,y)
+    
+    star.pendown()
+    star.fillcolor(color)
+    star.begin_fill()
+    star.setheading(30)
+    star.forward(lenght)
+    star.setheading(-30)
+    star.forward(lenght)
+    star.setheading(115)
+    star.forward(lenght)
+    star.setheading(30)
+    star.forward(lenght)
+    star.setheading(180)
+    star.forward(lenght)
+    star.setheading(110)
+    star.forward(lenght)
+    star.setheading(250)
+    star.forward(lenght)
+    star.setheading(180)
+    star.forward(lenght)
+    star.setheading(-30)
+    star.forward(lenght)
+    star.end_fill()
+    
+
+star.hideturtle()
+draw_stars(25, "#fcba03", -230, -50)
+draw_stars(25, "#fcba03", -130, -50)
+draw_stars(25, "#fcba03", -30, -50)
+draw_stars(25, "#fcba03", 60, -50)
+draw_stars(25, "#fcba03", 160, -50) 
+
+turtle.done()

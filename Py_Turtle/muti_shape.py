@@ -1,0 +1,68 @@
+import turtle
+
+beast = turtle.Turtle()
+
+# Draw Square 
+beast.penup()
+beast.goto(-310, 0)
+beast.pendown()
+beast.forward(100) 
+beast.left(90)
+beast.forward(100) 
+beast.left(90)
+beast.forward(100) 
+beast.left(90)
+beast.forward(100) 
+beast.left(90)
+
+beast.penup()
+beast.goto(-260, -60)
+beast.pendown()
+beast.write('Square', align='center', font=("Oswald", 25, "normal"))
+beast.hideturtle()
+
+# Draw Pentagon 
+beast.penup()
+beast.goto(-80, 0)
+beast.pendown()
+beast.forward(100)  
+beast.left(72)
+beast.forward(100)  
+beast.left(72)
+beast.forward(100)  
+beast.left(72)
+beast.forward(100)  
+beast.left(72)
+beast.forward(100)  
+beast.left(72)
+
+beast.penup()
+beast.goto(-28, -60)
+beast.pendown()
+beast.write('Pentagon', align='center', font=("Oswald", 25, "normal"))
+beast.hideturtle()
+
+# Draw Hexagon 
+beast.penup()
+beast.goto(180, 0)
+beast.pendown()
+beast.forward(100) 
+beast.left(60)
+beast.forward(100) 
+beast.left(60)
+beast.forward(100) 
+beast.left(60)
+beast.forward(100) 
+beast.left(60)
+beast.forward(100) 
+beast.left(60)
+beast.forward(100) 
+beast.left(60)
+
+beast.penup()
+beast.goto(235, -60)
+beast.pendown()
+beast.write('Hexagon', align='center', font=("Oswald", 25, "normal"))
+beast.hideturtle()
+
+turtle.done()
